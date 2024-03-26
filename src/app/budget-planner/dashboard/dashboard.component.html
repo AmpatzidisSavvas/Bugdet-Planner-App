@@ -17,7 +17,7 @@
                 </div>
                 <div class="month">
                         <h3>Current Month</h3>
-                        <p>{{ currentMonthIncome | currency }}</p>
+                        <p>{{ currentMonthIncome | currency : '€' }}</p>
                 </div>
                 <button class="button" (click)="onIncome()" mat-raised-button>View</button>   
             </div>
@@ -39,7 +39,7 @@
                 </div>
                 <div class="month">
                         <h3>Current Month</h3>
-                        <p>{{ currentMonthExpense | currency }}</p>
+                        <p>{{ currentMonthExpense | currency : '€' }}</p>
                 </div>
                 <button class="button" (click)="onExpense()" mat-raised-button>View</button>   
             </div>
@@ -73,18 +73,18 @@
             <div class="total-item">
                 <span class="icon income-icon"><mat-icon>attach_money</mat-icon></span>
                 <h3>Current Month Income</h3>
-                <p>{{ currentMonthIncome | currency }}</p>
+                <p>{{ currentMonthIncome | currency : '€'  }}</p>
             </div>
             <div class="total-item">
                 <span class="icon expense-icon"><mat-icon>money_off</mat-icon></span>
                 <h3>Current Month Expense</h3>
-                <p>{{ currentMonthExpense | currency }}</p>
+                <p>{{ currentMonthExpense | currency : '€'  }}</p>
             </div>
             <hr class="total-line">
             <div class="total-item">
                 <span class="icon trans-icon"><mat-icon>account_balance_wallet</mat-icon></span>
                 <h3>Current Month Savings</h3>
-                <p>{{ currentMonthSavings | currency }}</p>
+                <p>{{ currentMonthSavings | currency : '€'  }}</p>
             </div>
         </div>
 

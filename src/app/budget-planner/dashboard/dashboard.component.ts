@@ -9,11 +9,11 @@ import { Router } from '@angular/router';
 export class DashboardComponent {
 
   //Income
-  lastMonthsIncome = ['January: $1000', 'February: $1500', 'March: $1200'];
+  lastMonthsIncome = ['January: €1000', 'February: €1500', 'March: €1200'];
   currentMonthIncome = 2000;
 
   //Expense
-  lastMonthsExpense = ['January: $800', 'February: $1000', 'March: $1200'];
+  lastMonthsExpense = ['January: €800', 'February: €1000', 'March: €1200'];
   currentMonthExpense = 1500;
 
   // To Do Transactions
@@ -27,15 +27,15 @@ export class DashboardComponent {
   constructor(private router: Router) {}
 
   onIncome() {
-    this.router.navigate(['/bugdet-planner/income']);
+    this.router.navigate(['/budget-planner/income']);
   }
 
   onExpense() {
-    this.router.navigate(['/bugdet-planner/expense']);
+    this.router.navigate(['/budget-planner/expense']);
   }
 
   onTodo() {
-    this.router.navigate(['/bugdet-planner/todo']);
+    this.router.navigate(['/budget-planner/todo']);
   }
 
   get currentMonthSavings(): number {
