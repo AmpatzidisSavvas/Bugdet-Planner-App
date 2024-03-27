@@ -39,7 +39,7 @@ export class DashboardComponent {
   }
 
   get currentMonthSavings(): number {
-    return this.currentMonthIncome -this.currentMonthExpense;
+    return this.currentMonthIncome - this.currentMonthExpense;
   }
 
 }

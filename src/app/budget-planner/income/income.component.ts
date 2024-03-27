@@ -12,6 +12,11 @@ export class IncomeComponent implements OnInit {
   incomeForm: any;
   selectedMonth: any;
   monthSelected: boolean = false;
+  incomes: { month: string, expenseAmount: number }[]= [
+    {month: 'January', expenseAmount: 1500},
+    {month: 'February', expenseAmount: 2000},
+    {month: 'March', expenseAmount: 1800}
+  ];
 
   januaryIncomes: any[] = [
     { source: 'Salary', amount: 5000, investments: '401(k)' },
@@ -26,7 +31,7 @@ export class IncomeComponent implements OnInit {
     { source: 'Freelancing', amount: 1200, investments: 'Stocks' },
     { source: 'Rental Income', amount: 600, investments: 'Real Estate' },
   ];
-  
+
 
   constructor(private fb: FormBuilder, private router: Router) {
     
