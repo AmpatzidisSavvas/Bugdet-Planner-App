@@ -20,14 +20,6 @@ export class SideNavComponent {
     this.router.navigate(['/budget-planner/dashboard']);
   }
 
-  onProfile() {
-    this.router.navigate(['/budget-planner/profile']);
-  }
-
-  onHistory() {
-    this.router.navigate(['/budget-planner/history']);
-  }
-
   onLogout() {
     this.router.navigate(['/budget-planner/login']);
   }
